@@ -1,0 +1,13 @@
+jenkinsUser: m0724001
+jenkinsPassword: nuuCSIE404
+persistence:
+  enabled: true
+  size: 64Gi
+ingress:
+  enabled: true
+  certManager: true
+  hostname: jenkins.406.csie.nuu.edu.tw
+  tls: true
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+    cert-manager.io/cluster-issuer: "letsencrypt-prod"
