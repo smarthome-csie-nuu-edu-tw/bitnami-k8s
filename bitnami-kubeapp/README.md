@@ -2,9 +2,8 @@
 https://github.com/kubeapps/kubeapps/blob/master/chart/kubeapps/README.md
 
 ```
-helm repo add bitnami https://charts.bitnami.com/bitnami
 kubectl create namespace kubeapps
-helm install kubeapps --namespace kubeapps bitnami/kubeapps
+helm install kubeapps --namespace kubeapps bitnami/kubeapps -f ./kubeapp.yaml
 ```
 
 ## Ans範例
