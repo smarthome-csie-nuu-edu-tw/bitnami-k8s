@@ -16,3 +16,6 @@ helm install kubeapps --namespace kubeapps \
     --set ingress.extraHosts[0].path="/catalog"
     bitnami/kubeapps
 ```
+
+## reference
+[Your Application Dashboard for Kubernetes](https://kubeapps.com/)
