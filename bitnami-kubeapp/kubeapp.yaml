@@ -1,0 +1,4 @@
+ingress:
+  enabled: true
+  hostname: "app.406.csie.nuu.edu.tw"
+  
