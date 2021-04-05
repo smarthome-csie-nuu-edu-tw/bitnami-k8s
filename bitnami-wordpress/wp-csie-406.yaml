@@ -44,4 +44,16 @@ mariadb:
       enabled: true
       accessModes: ReadWriteMany
       size: 8Gi
+readinessProbe:
+  enabled: true
+  httpGet:
+    path: /wp-login.php
+    port: https
+    scheme: HTTPS
+livenessProbe:
+  enabled: true
+  httpGet:
+    path: /wp-admin/install.php
+    port: https
+    scheme: HTTPS
 
