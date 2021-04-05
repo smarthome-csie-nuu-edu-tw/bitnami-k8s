@@ -1,3 +1,5 @@
+## 模擬系網的轉移範例說明
+
 ## 不太重要的參數 因為之後會覆蓋掉
 wordpressUsername: user
 wordpressPassword: nuuCSIE404
@@ -7,7 +9,7 @@ wordpressLastName: wang
 wordpressBlogName: csie-nuu-edu-tw
 # 這裡也是會覆蓋XD
 wordpressScheme: http
-# 這裡是部屬的
+# 這裡是部屬的，指說需要至少兩台伺服器幫忙維護這個系網，可以增加XD(但是我們沒那麼多伺服器.....)
 replicaCount: 2
 service:
   type: ClusterIP
