@@ -1,5 +1,10 @@
 ## 真實系網的轉移範例說明
-
+global:
+  storageClass: gclee-nfs-storage-ssd
+autoscaling:
+  enabled: true
+  minReplicas: 3
+  maxReplicas: 6
 ## 不太重要的參數 因為之後會覆蓋掉
 wordpressUsername: user
 wordpressPassword: nuuCSIE404
@@ -39,6 +44,7 @@ mariadb:
     password: nuuCSIE404
   replication:
     enabled: true
+  architecture: replication
   master:
     persistence:
       enabled: true
