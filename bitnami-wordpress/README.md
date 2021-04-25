@@ -1,6 +1,10 @@
 ## 
 https://artifacthub.io/packages/helm/bitnami/wordpress/9.8.2
 
+## helm install mc2019
+kubectl create ns wp-mc2019
+helm3 install wp-mc2019 -n wp-mc2019 bitnami/wordpress -f ./wp-mc2019.yaml --version 10.10.3
+
 ## 安裝過程都可以在網頁上面處理!
 目前有四台主機伺服器協助系統(2021/04/05)，可以持續無限擴增，來源可以是實驗室或是機房的主機
 * 406實驗室: 120.105.129.176, 120.105.129.178

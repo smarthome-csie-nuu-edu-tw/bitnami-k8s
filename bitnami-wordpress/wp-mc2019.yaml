@@ -1,3 +1,10 @@
+## 
+global:
+  storageClass: gclee-nfs-storage-ssd
+autoscaling:
+  enabled: true
+  minReplicas: 2
+  maxReplicas: 3
 ## 不太重要的參數 因為之後會覆蓋掉
 wordpressUsername: user
 wordpressPassword: nuuCSIE404
@@ -8,7 +15,7 @@ wordpressBlogName: mc2019-csie-nuu-edu-tw
 # 這裡也是會覆蓋XD
 wordpressScheme: http
 # 這裡是部屬的
-replicaCount: 1
+replicaCount: 2
 service:
   type: ClusterIP
 persistence:
@@ -32,6 +39,7 @@ mariadb:
     password: nuuCSIE404
   replication:
     enabled: true
+  architecture: replication
   master:
     persistence:
       enabled: true
